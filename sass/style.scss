@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header";
+@import "blocks/timer";
+@import "blocks/warning";
+@import "blocks/video";
+@import "blocks/mega-sale";
+@import "blocks/list-course";
+@import "blocks/steps";
+@import "blocks/discount";
+@import "blocks/all-course";
+@import "blocks/selected-course";
+@import "blocks/complects";
+@import "blocks/itog";
+@import "blocks/faq";
+@import "blocks/footer";

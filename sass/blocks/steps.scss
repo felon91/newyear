@@ -1,0 +1,52 @@
+.steps {
+
+  .steps__title {
+    @include title();
+  }
+
+  .steps__block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .steps__element {
+    flex-basis: 28%;
+    text-align: center;
+    margin: 20px 0;
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+
+    span {
+      font-weight: 800;
+      display: block;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .steps {
+
+    .steps__element {
+      flex-basis: 100%;
+      margin: 10px 0;
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 15px 0;
+      }
+
+    }
+
+  }
+
+}

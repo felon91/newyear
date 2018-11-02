@@ -1,0 +1,69 @@
+.mega-sale {
+
+  .wrap {
+    max-width: 1060px;
+  }
+
+  .mega-sale__title {
+    @include title();
+  }
+
+  .mega-sale__block {
+    display: flex;
+    align-items: center;
+  }
+
+  .mega-sale__left {
+    flex-basis: 50%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+
+  .mega-sale__right {
+    flex-basis: 50%;
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+      margin: 25px 0;
+      span {
+        font-weight: 800;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .mega-sale {
+
+    .mega-sale__block {
+      flex-wrap: wrap;
+    }
+
+    .mega-sale__left {
+      flex-basis: 100%;
+    }
+
+    .mega-sale__right {
+      flex-basis: 100%;
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 15px 0;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  @include min-max(320px, 2560px, 0);
+}
+
+.wrap {
+  @include min-max(320px, 1200px, 15px);
+  position: relative;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,ul,ol {
+  hyphens: auto;
+}
+
+p {
+  color: $black;
+}
