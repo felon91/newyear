@@ -38,7 +38,7 @@ function get_timer_229(string_229) {
 }
 
 function getfrominputs_229() {
-	string_229 = "6/30/2018 00:00";
+	string_229 = "12/15/2018 00:00";
 	get_timer_229(string_229);
 	setInterval(function() {
 		get_timer_229(string_229);

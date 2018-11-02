@@ -1,7 +1,7 @@
 .discount {
-  margin: 30px auto;
-  background: url('../../images/newyear2019/discount-bg.jpg') top center no-repeat;
-  padding: 40px 0;
+  margin: 30px auto 0;
+  background: url('../../images/newyear2019/shape.png') left top repeat $red;
+  padding: 40px 0 0;
 
   .discount__title {
     text-align: center;
@@ -39,7 +39,7 @@
       font-size: 16px;
       line-height: 20px;
       padding: 20px 0;
-      background-color: #9bbc00;
+      background-color: $blue;
       color: $white;
       width: 100%;
       border-radius: 30px;
@@ -48,7 +48,7 @@
       outline: none;
 
       &:hover {
-        background-color: darken(#9bbc00, 10%);
+        background-color: darken($blue, 10%);
       }
 
     }
@@ -109,8 +109,8 @@
     }
 
     input[type="checkbox"]:checked + label::after {
-      background-color: #bf2da2;
-      border-color: #bf2da2;
+      background-color: $red;
+      border-color: $white;
     }
 
   }
@@ -176,7 +176,30 @@
 .discount--no-bg {
   margin: 0 auto;
   background: none;
-  padding: 0
+  padding: 0;
+
+  .discount__button {
+
+    button {
+      background-color: $red;
+
+      &:hover {
+        background-color: darken($red, 10%);
+      }
+
+    }
+
+  }
+
+  .discount__conf {
+
+    input[type="checkbox"]:checked + label::after {
+      background: none;
+      border-color: $white;
+    }
+
+  }
+
 }
 
 @media (max-width: 980px) {
@@ -195,6 +218,7 @@
 @media (max-width: 768px) {
 
   .discount {
+    padding-bottom: 15px;
 
     .discount__title {
       font-size: 30px;

@@ -1,16 +1,15 @@
 .video {
-  background: url('../../images/newyear2019/bg-bottom.jpg') top center no-repeat;
-  background-size: cover;
-  padding: 25px 0 80px;
+  background: url('../../images/newyear2019/shape.png') left top repeat $red;
+  padding: 25px 0 50px;
 
   .video__title {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 120%;
     color: $white;
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    margin: 40px 0 30px;
+    margin: 25px 0 45px;
   }
   
   .video__block {

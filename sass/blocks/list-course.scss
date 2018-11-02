@@ -1,7 +1,12 @@
 .list-course {
+  background: url('../../images/newyear2019/shape.png') repeat, url('../../images/newyear2019/bottom-list.png') center bottom no-repeat $blue;
+  padding: 10px 0 35px;
+  margin: 90px 0;
 
   .list-course__title {
     @include title();
+    color: $white;
+    margin: 50px 0;
   }
 
   p {
@@ -9,6 +14,7 @@
     line-height: 30px;
     text-align: center;
     font-weight: 300;
+    color: $white;
   }
 
   .list-course__block {
@@ -32,14 +38,10 @@
     text-align: center;
     flex-basis: 165px;
 
-    img {
-
-    }
-
     p {
       font-size: 15px;
       line-height: 18px;
-      font-weight: 300;
+      font-weight: 400;
       margin: 10px 0;
     }
 
@@ -54,7 +56,7 @@
       position: relative;
       font-size: 13px;
       line-height: 16px;
-      color: #4a33fc;
+      color: $blue;
       display: inline-block;
 
       &::after {
@@ -62,7 +64,7 @@
         position: absolute;
         width: 21px;
         height: 21px;
-        border: 1px solid #4a33fc;
+        border: 1px solid $blue;
         top: -1px;
         box-sizing: border-box;
         left: -35px;
@@ -88,17 +90,40 @@
     }
 
     input[type="checkbox"]:checked + label::after {
-      background-color: #4a33fc;
-      border-color: #4a33fc;
+      background-color: $blue;
+      border-color: $blue;
     }
 
   }
+
+  .list-course__plus {
+    margin: 50px 0;
+    font-weight: 600;
+  }
   
+}
+
+.list-course--bg {
+  background: url('../../images/newyear2019/uzor.png') repeat #eff3f5;
+  background-size: 250px;
+  border-radius: 25px;
+  padding: 10px 25px 35px;
+  margin: 40px 0;
+
+  .list-course__element {
+
+    p {
+      color: $black;
+    }
+
+  }
+
 }
 
 @media (max-width: 1024px) {
 
   .list-course {
+    margin: 50px 0;
 
     .list-course__element {
       flex-basis: 30%;

@@ -1,21 +1,21 @@
 .timer {
-  position: relative;
-  z-index: 1;
-  margin: 30px 0;
+  padding: 20px 0 45px;
+  max-width: 555px;
+  background-color: rgba(21, 27, 38, .6);
 
   .timer__title {
     font-size: 25px;
-    font-weight: 300;
     line-height: 40px;
     text-align: center;
+    font-weight: 800;
     color: $white;
-    margin: 15px 0;
+    margin: 15px 0 20px;
   }
 
   .timer__results {
-    color: $fiolet;
-    font-size: 70px;
-    font-weight: 300;
+    color: $red;
+    font-size: 67px;
+    font-weight: 800;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -34,6 +34,7 @@
         content: ".";
         position: absolute;
         margin-left: 15px;
+        color: $white;
       }
 
       &:last-child {
@@ -49,7 +50,7 @@
   }
 
   .timer__titles {
-    color: $white;
+    color: #b6c0d2;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -67,12 +68,27 @@
 
 }
 
-.timer--white {
+.timer--bg {
+  margin: 0 auto;
+  background: url('../../images/newyear2019/timer-bg.png') center top no-repeat;
+  max-width: 753px;
+  padding-bottom: 129px;
 
   .timer__results {
     color: $white;
   }
 
+}
+
+@media (max-width: 768px) {
+
+  .timer--bg {
+    background: #465b66;
+    border: 10px solid #202c33;
+    border-radius: 5px;
+    padding-bottom: 45px;
+  }
+  
 }
 
 @media (max-width: 680px) {
@@ -81,22 +97,28 @@
 
     .timer__title {
       font-size: 20px;
+      line-height: 30px;
     }
 
     .timer__results {
       font-size: 38px;
 
       span {
-        flex-basis: 65px;
+        flex-basis: 60px;
+
+        &::after {
+          margin-left: 8px;
+        }
+
       }
 
     }
 
     .timer__titles {
-      font-size: 16px;
+      font-size: 14px;
 
       span {
-        flex-basis: 65px;
+        flex-basis: 60px;
       }
 
     }

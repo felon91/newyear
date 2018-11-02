@@ -78,7 +78,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('allimg', function () {
-  return gulp.src('img/**/*.{png,jpg,svg}')
+  return gulp.src('images/newyear2019/*.{png,jpg,svg}')
       .pipe(gulp.dest('build/images/newyear2019/'))
       .pipe(browserSync.reload({stream: true}));
 });
@@ -135,8 +135,8 @@ gulp.task('serve', function () {
   gulp.watch("*.html", ["html"]);
   gulp.watch("js/**/*.js", ["scripts"]);
   gulp.watch("css/**/*.css", ["css"]);
-  gulp.watch("img/**/*.{png,jpg,svg}", ["allimg"]);
-  gulp.watch("img/**/*.{svg}", ["svg"]);
+  gulp.watch("images/**/*.{png,jpg,svg}", ["allimg"]);
+  gulp.watch("images/**/*.{svg}", ["svg"]);
 });
 
 gulp.task('copy', function () {

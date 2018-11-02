@@ -1,19 +1,20 @@
 .selected-course {
   text-align: center;
   margin: 50px 0;
+  padding-bottom: 80px;
 
   .selected-course__title {
     font-size: 25px;
     line-height: 30px;
-    color: #7a8694;
+    color: $black;
     font-weight: 700;
     margin: 25px 0;
   }
 
   .selected-course__name {
-    font-size: 20px;
-    line-height: 30px;
-    color: #7a8694;
+    font-size: 16px;
+    line-height: 26px;
+    color: $black;
   }
 
   .selected-course__price {
@@ -28,17 +29,18 @@
     .selected-course__old {
       font-weight: 300;
       text-decoration: line-through;
+      color: $red;
     }
 
     .selected-course__new {
       font-weight: 700;
-      color: #4a33fc;
+      color: $black;
     }
 
   }
 
   .selected-course__btn {
-    background-color: #9bbc00;
+    background-color: $blue;
     border-radius: 30px;
     font-size: 16px;
     text-transform: uppercase;
@@ -53,7 +55,7 @@
     font-weight: 700;
 
     &:hover {
-      background-color: darken(#9bbc00, 10%);
+      background-color: darken($blue, 10%);
     }
 
   }
@@ -63,6 +65,7 @@
 @media (max-width: 680px) {
 
   .selected-course {
+    padding-bottom: 15px;
 
     .selected-course__title {
       font-size: 20px;

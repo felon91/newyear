@@ -1,4 +1,7 @@
 .steps {
+  padding-top: 5px;
+  background: url('../../images/newyear2019/uzor.png') repeat #eff3f5;
+  background-size: 250px;
 
   .steps__title {
     @include title();
@@ -29,6 +32,11 @@
 
   }
 
+}
+
+.steps--bg {
+  background: none;
+  padding-top: 0;
 }
 
 @media (max-width: 768px) {

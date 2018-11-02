@@ -37,7 +37,7 @@
       line-height: 20px;
       color: $white;
       text-transform: uppercase;
-      background-color: #4a33fc;
+      background-color: $blue;
       border-radius: 20px;
       padding: 10px 0;
       width: 150px;
@@ -47,7 +47,7 @@
       font-weight: 700;
 
       &:hover {
-        background-color: darken(#4a33fc, 15%);
+        background-color: darken($blue, 15%);
       }
 
     }

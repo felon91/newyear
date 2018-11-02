@@ -1,7 +1,7 @@
 .mega-sale {
 
   .wrap {
-    max-width: 1060px;
+    max-width: 1030px;
   }
 
   .mega-sale__title {
@@ -14,25 +14,81 @@
   }
 
   .mega-sale__left {
-    flex-basis: 50%;
+    flex-basis: 52%;
     text-align: center;
+    margin-right: 30px;
 
     img {
       max-width: 100%;
+      margin: 8px 0;
+    }
+
+  }
+  
+  .mega-sale__left--sort {
+    text-align: left;
+
+    img {
+      margin-left: -15px;
+    }
+
+  }
+
+  .mega-sale__left--time {
+    text-align: left;
+
+    img {
+      margin-left: -35px;
     }
 
   }
 
   .mega-sale__right {
-    flex-basis: 50%;
+    flex-basis: 48%;
 
     p {
       font-size: 20px;
       line-height: 30px;
       font-weight: 300;
-      margin: 25px 0;
+      margin: 20px 0;
+
       span {
         font-weight: 800;
+      }
+
+    }
+
+    a {
+      color: $red;
+      text-decoration: none;
+      border-bottom: 1px solid $red;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .mega-sale {
+
+    .mega-sale__left--sort {
+
+      img {
+        margin-left: 0;
+      }
+
+    }
+
+    .mega-sale__left--time {
+
+      img {
+        margin-left: 0;
       }
 
     }
@@ -51,6 +107,15 @@
 
     .mega-sale__left {
       flex-basis: 100%;
+      margin-right: 0;
+    }
+
+    .mega-sale__left--sort {
+      text-align: center;
+    }
+
+    .mega-sale__left--time {
+      text-align: center;
     }
 
     .mega-sale__right {

@@ -1,5 +1,5 @@
 .itog {
-  background-color: #5d00d3;
+  background: url('../../images/newyear2019/shape.png') repeat $blue;
   text-align: center;
   padding: 30px 0 50px;
   margin: 45px 0;
@@ -40,7 +40,7 @@
   }
 
   .itog__btn {
-    background-color: #9bbc00;
+    background-color: $red;
     border-radius: 30px;
     font-size: 16px;
     text-transform: uppercase;
@@ -55,7 +55,7 @@
     font-weight: 700;
 
     &:hover {
-      background-color: darken(#9bbc00, 10%);
+      background-color: darken($red, 10%);
     }
 
   }
